@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= favicon_link_tag asset_path('img.ico'), :rel => 'icon', :type => "image/x-icon" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Minerva Ballet" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Minerva Ballet" %>">
