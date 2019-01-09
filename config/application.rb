@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module MinervaBallet
   class Application < Rails::Application
-
+    config.assets.initialize_on_precompile = false
     config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,
@@ -19,7 +19,7 @@ module MinervaBallet
         request_specs: false
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
-    config.assets.initialize_on_precompile = false
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
