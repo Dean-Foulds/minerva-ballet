@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <%= favicon_link_tag asset_path('img.ico'), :rel => 'icon', :type => "image/x-icon" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Minerva Ballet" %></title>
@@ -13,7 +14,7 @@
   </head>
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <%# <%= render 'layouts/navigation' %> 
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>
