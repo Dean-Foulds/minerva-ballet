@@ -4,11 +4,8 @@
         <div class="card-description">
             <h2>Minerva Ballet</h2>
             <%=image_tag("min.png", class: "avatar-large", alt: "min.png") %><br>
-            <li style="list-style: none"><%= link_to 'Learn more', page_path('about'), class:"card-description-btn"%></li>
+            <%= link_to 'Learn more', page_path('about'), class:"btn-medium"%>
         </div>
     </div>
 </div>    
-
-
-
 <%= render 'layouts/footer' %>

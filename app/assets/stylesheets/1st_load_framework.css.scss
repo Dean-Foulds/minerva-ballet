@@ -101,7 +101,7 @@ section {
   padding-bottom: 100px;
   padding-top: 100px;
   font-size: 85px;
-  color: white;
+  color: whitesmoke;
   background-color: #580000;
 }
 
@@ -126,7 +126,7 @@ section {
 
 
 .banner {
-  color: white;
+  color: whitesmoke;
   text-align: center;
   height: 100vh;
   // height: calc(100vh - 70px);
@@ -143,7 +143,7 @@ section {
 .banner p {
   font-size: 20px;
   font-weight: lighter;
-  color: white;
+  color: whitesmoke;
   margin-bottom: 20px;
 }
 
@@ -171,7 +171,7 @@ section {
   height: 100vh;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
-  color: white;
+  color: whitesmoke;
   position: relative;
 }
 .card-user {
@@ -189,13 +189,13 @@ section {
 .card-description h2 {
   justify-content: center;
   font-size: 60px;
-  color: white;
+  color: whitesmoke;
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
 }
 .card-description p {
   font-size: 16px;
-  color: white;
+  color: whitesmoke;
   font-family: 'Poiret One', cursive;
   padding-top: 50px;
   }
@@ -203,7 +203,7 @@ section {
 .card-description-btn {
 justify-content: center;
 font-size: 60px;
-color: white;
+color: whitesmoke;
 font-family: 'Poiret One', cursive;
 font-weight: bolder;
 }
@@ -291,4 +291,35 @@ font-weight: bolder;
 header .wrapper {
   height: 100%;
   display: inline-block;
+}
+.btn-medium {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: 45px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-weight: lighter;
+  opacity: 1;
+  font-family: 'Poiret One', cursive;
+
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+  border: #999999;
+}
+.btn-treehouse {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
 }
