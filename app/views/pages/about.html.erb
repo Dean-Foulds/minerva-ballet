@@ -10,7 +10,10 @@ integrity and technical rigour at its heart. As dancers, you will benefit from
 exposure to a wide range of repertoire designed to enhance your dancing,
 propel your development as artists, and delight audiences. Each dancer will
 receive the guidance and coaching required to achieve their best.
-If you would like to be involved, please get in touch.
+If you would like to be involved, please 
+<%= mail_to "info@minervaballet.com" do %>
+  <strong>get in touch.</strong>
+<% end %> 
 </p>
 <h2>Our Teachers</h2>
 <%=image_tag("patrick.jpg", alt: "min.png") %>
@@ -41,3 +44,5 @@ For our dancers, this will provide a further challenge, and we are in the proces
 
 Our final piece is Knots.  This is a collaborative work created by our ballet mistress Sheila and others.  This explores the trials of human relationships.  With a diverse score including Bach, Madness and The Buzzcocks, this is a humorous piece.  Drawing from classical ballet, jazz and contemporary dancing, the choreography is as eclectic as the music.  The juxtaposition of pain and jocularity mirrors the complexity of human nature and interactions.</p>
 </div>
+
+<%= render 'layouts/footer' %>
