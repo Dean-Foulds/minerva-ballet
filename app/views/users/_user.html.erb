@@ -8,5 +8,7 @@
   <% end %>
 </td>
 <td>
+  <% if user.admin%>
   <%= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
+  <% end%>
 </td>

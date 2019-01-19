@@ -124,10 +124,7 @@ section {
   position: relative;
 }
 
-// .padding {
-//   padding-top: 50px;
-// }
-//Banner
+
 .banner {
   color: white;
   text-align: center;
@@ -202,6 +199,15 @@ section {
   font-family: 'Poiret One', cursive;
   padding-top: 50px;
   }
+
+  .card-description-btn {
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+  }
+  
 
 .card-link {
   position: absolute;

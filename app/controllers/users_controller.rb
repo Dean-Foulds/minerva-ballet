@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   after_action :verify_authorized
+  before_action :ensure_admin, except: [:show, :edit, :update]
 
   def index
     @users = User.all
@@ -24,7 +25,7 @@ class UsersController < ApplicationController
 
   def destroy
     user = User.find(params[:id])
-    authorize user
+    authorize admin
     user.destroy
     redirect_to users_path, :notice => "User deleted."
   end
