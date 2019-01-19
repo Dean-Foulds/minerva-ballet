@@ -3,12 +3,13 @@ class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
 
   def about
-      
+    @users = User.all
+    authorize @users 
   end
 
   def index
     @users = User.all
-    authorize User
+    authorize @users
   end
 
   def show

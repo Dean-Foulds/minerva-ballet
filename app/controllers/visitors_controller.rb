@@ -1,11 +1,10 @@
-class VisitorsController < ApplicationController
-    skip_before_action :authenticate_user!, only: [:index, :about]
+class VisitorsController < ApplicationController 
+    skip_before_action :authenticate_user!, only: [ :index ]
 
-  def index
-  end
-
-  def about
-      
-  end
+    def index 
+    end 
+    
+    def about
+    end    
 end
 
