@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script type="text/javascript"> //<![CDATA[ 
+var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <%= favicon_link_tag asset_path('min.png'), :rel => 'icon', :type => "image/x-icon" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +18,10 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+  <script language="JavaScript" type="text/javascript">
+TrustLogo("https://www.minervaballet.com/pages/about", "CL1", "none");
+</script>
+<a  href="https://ssl.comodo.com" id="comodoTL">SSL Certificates</a>
     <header>
       <%# <%= render 'layouts/navigation' %> 
     </header>
