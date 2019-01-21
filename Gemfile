@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
 gem "letter_opener", group: :development
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'postmark-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
