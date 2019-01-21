@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/about', to: 'pages#about', as: :about
+  get 'pages/cookie_eu', to: 'pages#cookie_eu', as: :cookie_eu
   namespace :admin do
     resources :users
     root to: "users#index"

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    authorize @users
+    authorize admin
   end
 
   def show
