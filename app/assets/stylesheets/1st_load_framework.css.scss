@@ -1,6 +1,6 @@
 // import the CSS framework
 @import "foundation";
-
+@import "cookies_eu";
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
@@ -340,3 +340,9 @@ header .wrapper {
   text-decoration: none;
   color: white;
 }
+
+// .cookies-eu                 /* main div */
+// .cookies-eu-content-holder  /* content holder */
+// .cookies-eu-button-holder   /* button holder */
+// .cookies-eu-ok              /* button */
+// .cookies-eu-link            /* link */

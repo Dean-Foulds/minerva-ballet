@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require foundation
+//= require cookies_eu
 //= require_tree .
 $(function() {
   $(document).foundation();
 });
+//= require cookies_eu
