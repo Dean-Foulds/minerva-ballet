@@ -9,6 +9,10 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
+      if current_user.admin?
+      else 
+        redirect_to new_user_session_path, alert: "Not Admin"
+      end  
     end
 
     # Override this value to specify the number of elements to display at a time
