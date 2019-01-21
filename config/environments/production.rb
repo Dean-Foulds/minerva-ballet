@@ -80,7 +80,7 @@ Rails.application.configure do
   # ActionMailer Config
  
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method     = :postmark
   config.action_mailer.postmark_settings   = { api_key: ENV['POSTMARK_API_KEY'] }

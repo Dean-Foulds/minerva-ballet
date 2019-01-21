@@ -16,6 +16,7 @@ gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
 gem "letter_opener", group: :development
 gem 'cookies_eu'
 gem 'haml-rails'
+gem 'postmark-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
