@@ -77,13 +77,18 @@ Rails.application.configure do
     user_name: Rails.application.secrets.email_provider_username,
     password: Rails.application.secrets.email_provider_password
   }
-  # ActionMailer Config
+
+  
+  ActionMailer Config
+ 
+
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method     = :postmark
   config.action_mailer.postmark_settings   = { api_key: ENV['POSTMARK_API_KEY'] }
-  config.action_mailer.default_url_options = { host: "yourapp.herokuapp.com" }
+  config.action_mailer.default_url_options = { host: "https://minerva-ballet.herokuapp.com/" }
+
 
 
   # Use default logging formatter so that PID and timestamp are not suppressed.

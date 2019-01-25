@@ -313,7 +313,7 @@ header .wrapper {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   font-size: 45px;
-  padding: 5px 5px;
+  padding: 8px 8px;
   border-radius: 10px;
   font-weight: lighter;
   opacity: 1;
@@ -340,9 +340,20 @@ header .wrapper {
   text-decoration: none;
   color: white;
 }
+.cookies-eu-ok {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-color: #580000;
+  font-size: 12px;
+  padding: 5px 5px;
+  border-radius: 30pxpx;
+  font-weight: lighter;
+  opacity: 1;
+  font-family: 'Poiret One', cursive;
+}  
 
 // .cookies-eu                 /* main div */
 // .cookies-eu-content-holder  /* content holder */
 // .cookies-eu-button-holder   /* button holder */
-// .cookies-eu-ok              /* button */
+           /* button */
 // .cookies-eu-link            /* link */
