@@ -18,6 +18,7 @@ gem 'cookies_eu'
 gem 'haml-rails'
 gem 'postmark-rails'
 gem 'gibbon'
+gem 'binding_of_caller'
 group :development, :test do
   gem 'byebug', platform: :mri
 end

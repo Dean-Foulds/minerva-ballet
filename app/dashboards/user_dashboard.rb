@@ -16,7 +16,8 @@ class UserDashboard < Administrate::BaseDashboard
     remember_created_at: Field::DateTime,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    name: Field::String,
+    first_name: Field::String,
+    last_name: Field::String,
     role: Field::String.with_options(searchable: false),
   }.freeze
 
@@ -43,7 +44,8 @@ class UserDashboard < Administrate::BaseDashboard
     :remember_created_at,
     :created_at,
     :updated_at,
-    :name,
+    :first_name,
+    :last_name,
     :role,
   ].freeze
 
@@ -56,7 +58,8 @@ class UserDashboard < Administrate::BaseDashboard
     :reset_password_token,
     :reset_password_sent_at,
     :remember_created_at,
-    :name,
+    :first_name,
+    :last_name,
     :role,
   ].freeze
 

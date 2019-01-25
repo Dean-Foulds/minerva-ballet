@@ -77,7 +77,8 @@ Rails.application.configure do
     user_name: Rails.application.secrets.email_provider_username,
     password: Rails.application.secrets.email_provider_password
   }
-  # ActionMailer Config
+  
+  ActionMailer Config
  
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
