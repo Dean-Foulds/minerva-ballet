@@ -79,7 +79,7 @@ Rails.application.configure do
   }
 
   
-  ActionMailer Config
+  #ActionMailer Config
  
 
   config.action_mailer.perform_deliveries = true
