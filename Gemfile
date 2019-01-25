@@ -16,6 +16,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
 gem "letter_opener", group: :development
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'postmark-rails'
 gem 'cookies_eu'
 gem 'haml-rails'
 gem 'postmark-rails'

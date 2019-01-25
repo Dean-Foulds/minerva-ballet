@@ -4,6 +4,7 @@ class User < ApplicationRecord
   # after_create :send_welcome_email
   after_create :subscribe_to_newsletter
 
+
   def set_default_role
     self.role ||= :user
   end
@@ -15,9 +16,11 @@ class User < ApplicationRecord
 
   private
 
+
   def subscribe_to_newsletter
     SubscribeToNewsletterService.new(self).call
   end
+
 
   def send_welcome_email
     UserMailer.welcome(self).deliver_now
