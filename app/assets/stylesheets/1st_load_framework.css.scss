@@ -281,6 +281,7 @@ font-weight: bolder;
 }
 
 .about-page p {
+    padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
     font-size: 18px;
@@ -357,3 +358,30 @@ header .wrapper {
 // .cookies-eu-button-holder   /* button holder */
            /* button */
 // .cookies-eu-link            /* link */
+.simple-calendar {
+  .day {}
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {}
+  .past {
+    
+  }
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    
+  }
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+}
