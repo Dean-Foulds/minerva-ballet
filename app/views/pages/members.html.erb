@@ -3,7 +3,7 @@
 
 <div class='about-page'><p>Welcome to our members’ area.  You will receive an email acknowledging your sign-up.  
 Here, you will find rehearsal schedules and cast sheets, as well as documents posted by our artistic director.</p>  
-<p>Please read our <%= link_to "guidelines", guidelines_path, target: :_blank %>
+<p>Please read our <%= link_to "guidelines for dancers", guidelines_path, target: :_blank %>
 <%= month_calendar do |date| %>
   <%= date.to_formatted_s(:short) %>
 <% end %>
