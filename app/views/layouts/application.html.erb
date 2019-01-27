@@ -9,6 +9,7 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Minerva Ballet" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%# Modernizr is required for Zurb Foundation %>
+    <script type="text/javascript" src="<?=ASSETS_URL_JAVASCRIPT?>/js/jquery.js"></script>
     <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <%= csrf_meta_tags %>
