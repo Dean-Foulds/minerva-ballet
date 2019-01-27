@@ -359,29 +359,33 @@ header .wrapper {
            /* button */
 // .cookies-eu-link            /* link */
 .simple-calendar {
-  .day {}
-
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
-
-  .today {}
-  .past {
-    
+  table{
+    width: 100%;
   }
-  .future {}
+//   .day {}
 
-  .start-date {}
+//   .wday-0 {}
+//   .wday-1 {}
+//   .wday-2 {}
+//   .wday-3 {}
+//   .wday-4 {}
+//   .wday-5 {}
+//   .wday-6 {}
 
-  .prev-month {
+//   .today {}
+//   .past {
     
-  }
-  .next-month { }
-  .current-month {}
+//   }
+//   .future {}
 
-  .has-events {}
+//   .start-date {}
+
+//   .prev-month {
+    
+//   }
+//   .next-month { }
+//   .current-month {}
+
+//   .has-events {}
+// 
 }
