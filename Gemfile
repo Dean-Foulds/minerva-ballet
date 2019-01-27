@@ -20,6 +20,8 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'postmark-rails'
 gem "simple_calendar", "~> 2.0"
 gem 'cookies_eu'
+gem 'bootstrap'
+gem 'jquery-rails'
 gem 'haml-rails'
 gem 'postmark-rails'
 gem 'gibbon'
