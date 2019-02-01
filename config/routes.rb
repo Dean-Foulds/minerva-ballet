@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events
+  resources :meetings
   get 'pages/about', to: 'pages#about', as: :about
   get 'pages/members', to: 'pages#members', as: :members
   get 'pages/guidelines', to: 'pages#guidelines', as: :guidelines
