@@ -10,7 +10,7 @@
      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%# Modernizr is required for Zurb Foundation %>
     <%= javascript_include_tag 'vendor/modernizr' %>
-    <base href="http://minervaballet.com" />
+    <%# <base href="http://minervaballet.com" /> %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <%= csrf_meta_tags %>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,7 +19,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-132051209-1');
 </script>
 
