@@ -12,13 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-// require turbolinks
 //= require cookies_eu
 //= require foundation
 //= require_tree .
-
-$(document).ready(function() {
-    $(document).foundation();
+$(function() {
+  $(document).foundation();
 });
 
-//= require cookies_eu
