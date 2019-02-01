@@ -6,7 +6,15 @@ Here, you will find rehearsal schedules and cast sheets, as well as documents po
 <p>Please read our <%= link_to "guidelines for dancers", guidelines_path, target: :_blank %>
 </div>
 
-<%= link_to 'New Event', new_event_path %>
+
+<% if user_signed_in? %>
+  <% if current_user.try(:admin?) %>
+    <%= link_to 'New Event', new_event_path %>
+  <% end %>
+<% end %>
+
+
+
 
 <%= month_calendar events: @events do |date, events| %>
   <%= date.to_formatted_s(:short) %>

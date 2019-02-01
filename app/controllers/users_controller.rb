@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
-  skip_before_action :authenticate_user!, only: :index
+  # skip_before_action :authenticate_user!, only: :index
 
   def about
     @users = User.all
@@ -9,7 +9,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    authorize admin
   end
 
   def show
