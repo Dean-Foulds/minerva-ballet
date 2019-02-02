@@ -22,6 +22,7 @@
   %b End time:
   = @event.end_time.strftime( '%a %b %e %H:%M ')
 
-= link_to 'Edit', edit_event_path(@event), :class => 'btn-treehouse'
-\|
-= link_to 'List all events', events_path, :class => 'btn-treehouse'
+-if current_user.admin?
+  = link_to 'Edit', edit_event_path(@event), :class => 'btn-treehouse'
+  \|
+  = link_to 'List all events', events_path, :class => 'btn-treehouse'

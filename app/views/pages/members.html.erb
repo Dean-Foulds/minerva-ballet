@@ -21,11 +21,12 @@ Here, you will find rehearsal schedules and cast sheets, as well as documents po
 <%= month_calendar events: @events do |date, events| %>
   <%= date.to_formatted_s(:short) %>
   <% events.each do |event| %>
-    <div>
-      <%= event.name %>
-      <%= event.start_time.strftime('%H:%M') %>
-      <%= '-' %>
-      <%= event.end_time.strftime('%H:%M')  %>
+    <div class='cal-card'> 
+      <%= event.name %><br>
+      <%= event.start_time.strftime('%H:%M')%> - <%= event.end_time.strftime('%H:%M')  %>
+      <% if current_user %>
+          <%= link_to "", event_path(event), class: "card-link"%>
+      <% end %>
     </div>
   <% end %>
 <% end %>

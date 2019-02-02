@@ -92,6 +92,19 @@ section {
   @extend .tiny;
 }
 
+.cal-card {
+  height: 8vh;
+  text-shadow: 0 1px 2px rgb(121, 115, 115);
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 1px;
+  font-weight: bolder;
+  color: white;
+  background-color: #580000;
+  position: relative;
+  font-family: 'Poiret One', cursive;
+}
+
 .card-description {
   position: center;
   height: 100%;
