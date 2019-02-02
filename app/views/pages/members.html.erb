@@ -10,6 +10,7 @@ Here, you will find rehearsal schedules and cast sheets, as well as documents po
 <% if user_signed_in? %>
   <% if current_user.try(:admin?) %>
     <%= link_to 'New Event', new_event_path, class: 'btn-treehouse'%>
+     <%= link_to 'List all events', events_path, :class => 'btn-treehouse' %>
   <% end %>
 <% end %>
 </div>
