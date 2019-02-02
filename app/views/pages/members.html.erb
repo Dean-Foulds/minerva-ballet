@@ -23,6 +23,9 @@ Here, you will find rehearsal schedules and cast sheets, as well as documents po
   <% events.each do |event| %>
     <div>
       <%= event.name %>
+      <%= event.start_time.strftime('%H:%M') %>
+      <%= '-' %>
+      <%= event.end_time.strftime('%H:%M')  %>
     </div>
   <% end %>
 <% end %>

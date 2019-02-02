@@ -3,12 +3,24 @@
 %p
   %b Name:
   = @event.name
+  %p
+  %b Type of Event:
+  = @event.type_of_event
+  %p
+  %b Location:
+  = @event.location
+  %p
+  %b Teachers:
+  = @event.teachers
+  %p
+  %b Description:
+  = @event.description
 %p
   %b Start time:
-  = @event.start_time
+  = @event.start_time.strftime( '%a %b %e %H:%M ')
 %p
   %b End time:
-  = @event.end_time
+  = @event.end_time.strftime( '%a %b %e %H:%M ')
 
 = link_to 'Edit', edit_event_path(@event), :class => 'btn-treehouse'
 \|

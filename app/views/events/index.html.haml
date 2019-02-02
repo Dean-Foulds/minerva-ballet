@@ -15,8 +15,8 @@
     - @events.each do |event|
       %tr
         %td= event.name
-        %td= event.start_time
-        %td= event.end_time
+        %td= event.start_time.strftime( '%a %b %e %H:%M ')
+        %td= event.end_time.strftime( '%a %b %e %H:%M ')
         %td= link_to 'Show', event
         %td= link_to 'Edit', edit_event_path(event)
         %td= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }
