@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
-  before_action :set_event, only: [:show, :index]
+  before_action :set_event, only: [:show]
   # GET /events
   # GET /events.json
   def index
@@ -10,7 +10,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    @event = Event.find(params[:id])
+
   end
 
   # GET /events/new
