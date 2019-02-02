@@ -319,7 +319,6 @@ header .wrapper {
   font-weight: lighter;
   opacity: 1;
   font-family: 'Poiret One', cursive;
-
 }
 .btn-medium:hover {
   opacity: 1;
@@ -329,17 +328,20 @@ header .wrapper {
 }
 .btn-treehouse {
   color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: #6AD58B;
+  padding: 10px 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: #580000;
   transition: background 0.3s ease;
+  font-family: 'Poiret One', cursive;
 }
 .btn-treehouse:hover {
   opacity: 1;
-  background: #3ac162;
+  background: #8b2525;
   text-decoration: none;
   color: white;
+  font-family: 'Poiret One', cursive;
 }
 .cookies-eu-ok {
   color: whitesmoke;
