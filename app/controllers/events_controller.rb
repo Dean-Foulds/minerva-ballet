@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
-  before_action :set_event, only: [:show, :index, :edit]
+  before_action :set_event, only: [:show, :index]
   # GET /events
   # GET /events.json
   def index
@@ -20,7 +20,7 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
-
+    @event = Event.find(params[:id])
   end
 
   # POST /events
@@ -42,6 +42,7 @@ class EventsController < ApplicationController
   # PATCH/PUT /events/1
   # PATCH/PUT /events/1.json
   def update
+    @event = Event.find(params[:id])
     respond_to do |format|
       if @event.update(event_params)
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
