@@ -21,9 +21,38 @@ After retiring from professional ballet, Patrick has pursued interests inside an
 <%=image_tag("Sheila.jpg", alt: "min.png") %>
 <h3>Sheila Styles, Ballet Mistress</h3>
 <p>Sheila has an international reputation as a dancer, teacher and choreographer.  Her professional ballet journey started at the Royal Ballet School, and this grounding saw her perform as a principal dancer for several companies internationally.  Sheila brings with her a wealth of knowledge and experience having worked with some of the most iconic names in ballet.  As well as being an incomparable technician, she is an inspirational artist and communicator.  As a choreographer, she is intelligent and innovative.  We are delighted that Sheila will be joining us. </p>
+
+
+<h2>Guest Teachers</h2>
+<%=image_tag("teach2.jpg", alt: "min.png") %>
+
+<h3>Inga George</h3>
+<p>Inga George graduated with distinction from the V. Chabukiani Ballet
+School in Tbilisi, Georgia, and joined the National State Opera and Ballet
+Theatre of Georgia. Inga rose to the rank of Prima Ballerina. Later in her
+career, she was appointed Assistant Artistic Director of the V. Chabukiani
+Ballet School. She now teaches vocational and adult students in London.</p>
+
+<%=image_tag("teach1.jpg", alt: "min.png") %>
+<h3>Alyona Solovkova </h3>
+<p>Alyona Solovkova began her training in Russia, where she underwent 7 years of professional training.
+She was awarded a full scholarship to attend Central Ballet School, London and graduated in 2004.
+ On Graduation, Alyona performed as a soloist at both the Constanta and Iasi Opera Houses, Romania. 
+ She also performed with the Kirov Ballet at the Royal Opera House.  
+She now teaches vocational, pre-vocational and adult students in London.</p>
+
+<%=image_tag("dance.jpg", alt: "min.png") %>
+<h3>Viaceslav Baltaga</h3>
+<p>Viaceslav Baltaga graduated from the renowned Kiev State Ballet School in 1994 where, as a student, he won several International competitions. He became a soloist three years later and a principal with the Constanta Opera House, Romania, where he remained until 2005. He has danced most of the iconic male roles.  
+Viaceslav now teaches vocational and prevocational students, as well as coaching students for auditions and international competitions. </p>
+
 <h2>Current Repertoire</h2>
 <p>This season we are working on a triple bill.</p>
-<p>Les Sylphides is an iconic, non-narrative ballet, choreographed by Mikhail Fokine.  Orchestrated by Glazunov, the piano music of Chopin sets the scene of ethereal beauty and dreams.  Woodland sylphs dance for a young man, the poet, in the moonlight.   This is a stylised and technically demanding ballet, requiring unfaltering corps de ballet discipline, clean lines, and fluid port de bras.  
+
+
+
+<p><%= link_to "https://www.youtube.com/watch?v=LBJNc3h7Hp8" do %>
+  <strong>Les Sylphides</strong><% end %>  is an iconic, non-narrative ballet, choreographed by Mikhail Fokine.  Orchestrated by Glazunov, the piano music of Chopin sets the scene of ethereal beauty and dreams.  Woodland sylphs dance for a young man, the poet, in the moonlight.   This is a stylised and technically demanding ballet, requiring unfaltering corps de ballet discipline, clean lines, and fluid port de bras.  
 
 The “romantic rêverie” we recognise as Les Sylphides was first performed by Diaghilev’s Ballets Russes in the Théâtre du Châtelet in June 1909.  Its soloists were Tamara Karsavina, Vaslav Nijinsky and Anna Pavlova.  The long romantic tutu was designed by Léon Bakst, and inspired by a lithograph of Marie Taglioni as a sylph.</p>
 <%=image_tag("dance1.jpg", alt: "min.png") %>
@@ -33,12 +62,15 @@ The “romantic rêverie” we recognise as Les Sylphides was first performed by
 <p>This work will challenge our dancers and delight our audience, lulling the latter into a beautiful dream.  It will open our triple bill, and serve as a contrast to the next work, Polovtsian Dances.</p>
 
 
-<p>Polovtsian Dances consists of a series dances from the second act of Borodin’s historical epic opera, Prince Igor.  It is set in the encampment of Khan Kontchak, leader of twelfth century Polovtsian army.  Prince Igor and his son have been captured, and are entertained by the warriors dancing.  
+<p><%= link_to "https://www.youtube.com/watch?v=xLMbf7E5Uxo" do %>
+  <strong>Polovtsian dances</strong><% end %> consists of a series dances from the second act of Borodin’s historical epic opera, Prince Igor.  It is set in the encampment of Khan Kontchak, leader of twelfth century Polovtsian army.  Prince Igor and his son have been captured, and are entertained by the warriors dancing.  
 This work demonstrates the versatility, innovation and musicality of Fokine’s choreography.  The Borodin score is as beautiful as it is primal, and conjures up the energy, flamboyance and turbulence of the twelfth century central Asia. 
 
 For our dancers, this will provide a further challenge, and have enlisted the help of a Russian character teaching to ensure a holistic and faithful approach to this work.</p>
 
-<p>Our final piece is Knots.  This is a collaborative work created by our ballet mistress Sheila and others.  This explores the trials of human relationships.  With a diverse score including Bach, Madness and The Buzzcocks, this is a humorous piece.  Drawing from classical ballet, jazz and contemporary dancing, the choreography is as eclectic as the music.  The juxtaposition of pain and jocularity mirrors the complexity of human nature and interactions.</p>
+<p>Our final piece is <%= link_to "https://www.youtube.com/watch?v=cxMliv0WCNI" do %>
+  <strong>Knots</strong>
+<% end %>.  This is a collaborative work created by our ballet mistress Sheila and others.  This explores the trials of human relationships.  With a diverse score including Bach, Madness and The Buzzcocks, this is a humorous piece.  Drawing from classical ballet, jazz and contemporary dancing, the choreography is as eclectic as the music.  The juxtaposition of pain and jocularity mirrors the complexity of human nature and interactions.</p>
 </div>
 
 <%= render 'layouts/footer' %>
