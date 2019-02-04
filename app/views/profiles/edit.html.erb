@@ -6,10 +6,11 @@
     <div class="col-md-12 col-sm-offset-4">
       <%= simple_form_for(current_user, url: update_profile_path) do |f| %>
       <%= f.error_notification %>
-      <%= f.input :email, placeholder: "email" %>
       <%= f.input :first_name, placeholder: "First Name" %>
       <%= f.input :last_name, placeholder: "Last Name" %>
+       <%= f.input :email, placeholder: "email" %>
       <%= f.input :date_of_birth, placeholder: "DOB" %>
+       <%= f.input :next_of_kin, placeholder: "Next of kin" %>
        <%= f.input :telephone, placeholder: "contact number" %>
         <%= f.input :previous_injuries, placeholder: "Any known injuries" %>
       <%= f.error :base %>
