@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-3">
+      <%= simple_form_for(current_user, url: update_profile_path) do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :username, placeholder: "Username" %>
+      <%= f.input :first_name, placeholder: "First name" %>
+      <%= f.input :last_name, placeholder: "Last name" %>
+      <%= f.input :email, placeholder: "bob@bob.com" %>
+      <%= f.input :avatar, as: :attachinary %>
+      <%= f.error :base %>
+      <div style="text-align: right;">
+      <%= f.submit "Save", class: "btn btn-default"  %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

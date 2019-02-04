@@ -1,0 +1,12 @@
+<!-- PROFILE TEXT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-offset-4">
+    <h1>Profile Page</h1>
+    
+
+      <p>Email address: <%= current_user.email %></p>
+      <%= link_to "Edit profile", edit_profile_path, class: "btn btn-default" %>
+    </div>
+  </div>
+</div>
