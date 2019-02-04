@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
     end
   
     def edit
-      authorize current_user
+    #   authorize current_user
     end
   
     def update

@@ -1,11 +1,15 @@
-<!-- PROFILE TEXT -->
+<%= render 'layouts/navigation' %>
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-sm-offset-4">
     <h1>Profile Page</h1>
-    
-
+      
+      <p>First Name: <%= current_user.first_name %></p>
+      <p>Last name: <%= current_user.last_name %></p>
       <p>Email address: <%= current_user.email %></p>
+      <p>Date of birth: <%= current_user.date_of_birth %></p>
+      <p>Next of Kin: <%= current_user.next_of_kin %></p>
+      <p>Any previous injuries? <%= current_user.previous_injuries %></p>
       <%= link_to "Edit profile", edit_profile_path, class: "btn btn-default" %>
     </div>
   </div>
