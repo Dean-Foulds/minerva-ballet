@@ -239,7 +239,7 @@ font-weight: bolder;
 }
 
 .avatar {
-  width: 30px;
+  width: 50px;
   border-radius: 50%;
 }
 .avatar-large {
@@ -255,8 +255,10 @@ font-weight: bolder;
   border: white 1px solid;
 }
 .avatar-square {
-  width: 30px;
-  border-radius: 0px;
+  width: 100px;
+  width: 100px;
+  padding-top: 10px;
+  border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
 }

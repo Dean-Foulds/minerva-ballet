@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount Attachinary::Engine => "/attachinary"
+
   resources :events
   get 'pages/about', to: 'pages#about', as: :about
   get 'pages/members', to: 'pages#members', as: :members

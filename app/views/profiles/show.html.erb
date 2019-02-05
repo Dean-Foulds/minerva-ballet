@@ -2,8 +2,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-sm-offset-4">
-    <h1>Profile Page</h1>
-      
+      <% if current_user.photo? %>
+      <%= cl_image_tag current_user.photo, class: "avatar-large" %>
+      <% else %>
+      <h1>Profile Page</h1>
+    <% end %>
       <p>First Name: <%= current_user.first_name %></p>
       <p>Last name: <%= current_user.last_name %></p>
       <p>Email address: <%= current_user.email %></p>

@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
-  #after_create :send_welcome_email
+  mount_uploader :photo, PhotoUploader
   after_create :subscribe_to_newsletter
 
 

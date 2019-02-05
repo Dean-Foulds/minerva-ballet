@@ -10,10 +10,15 @@ gem 'figaro'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem "attachinary"
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
+gem 'jquery-ui-rails', '~> 5.0.5'  
+gem 'jquery-fileupload-rails'
 gem 'jbuilder', '~> 2.5'
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.0.24'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
 gem "letter_opener", group: :development
 gem 'dotenv-rails', groups: [:development, :test]

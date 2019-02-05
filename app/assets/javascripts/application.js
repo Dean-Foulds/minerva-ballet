@@ -9,9 +9,12 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
 //= require jquery
 //= require jquery_ujs
+//= require jquery-fileupload/basic
+//= require jquery-ui/datepicker
+//= require cloudinary/jquery.cloudinary
+//= require attachinary
 //= require cookies_eu
 //= require foundation
 //= require_tree .
