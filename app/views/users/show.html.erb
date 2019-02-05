@@ -1,3 +1,15 @@
-<h3>User</h3>
-<p>Name: <%= @user.first_name if @user.first_name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+ <%= render 'layouts/navigation' %>
+ <% if @user.photo? %>
+      <%= cl_image_tag @user.photo, class: "avatar-large" %>
+      <% else %>
+      <h1>Profile Page</h1>
+    <% end %>
+<p><strong>Name:</strong> <%= @user.first_name if @user.first_name %> <%= @user.last_name if @user.last_name %></p>
+<p><strong>Email:</strong> <%= @user.email if @user.email %></p>
+<p><strong>Date of Birth:</strong> <%= @user.date_of_birth if @user.date_of_birth %></p>
+<p><strong>Next of kin:</strong> <%= @user.next_of_kin if @user.next_of_kin%></p>
+<p><strong>Telephone:</strong> <%= @user.telephone if @user.telephone %></p>
+<p><strong>Previous injuries:</strong> <%= @user.previous_injuries if @user.previous_injuries %></p>
+<p><strong>About me:</strong> <%= @user.about_me if @user.about_me %></p>
+
+<strong></strong>

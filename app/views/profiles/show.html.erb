@@ -7,14 +7,16 @@
       <% else %>
       <h1>Profile Page</h1>
     <% end %>
-      <p>First Name: <%= current_user.first_name %></p>
-      <p>Last name: <%= current_user.last_name %></p>
-      <p>Email address: <%= current_user.email %></p>
-      <p>Date of birth: <%= current_user.date_of_birth %></p>
-      <p>Next of Kin: <%= current_user.next_of_kin %></p>
-      <p>Any previous injuries? <%= current_user.previous_injuries %></p>
-      <p>About me: <%= current_user.about_me %></p>
+      <p><strong>First Name:</strong> <%= current_user.first_name %></p>
+      <p><strong>Last name:</strong> <%= current_user.last_name %></p>
+      <p><strong>Email address:</strong> <%= current_user.email %></p>
+      <p><strong>Date of birth:</strong> <%= current_user.date_of_birth %></p>
+      <p><strong>Next of Kin:</strong> <%= current_user.next_of_kin %></p>
+      <p><strong>Any previous injuries?</strong> <%= current_user.previous_injuries %></p>
+      <p><strong>About me:</strong> <%= current_user.about_me %></p>
       <%= link_to "Edit profile", edit_profile_path, class: "btn-treehouse" %>
     </div>
   </div>
 </div>
+
+</strong>
