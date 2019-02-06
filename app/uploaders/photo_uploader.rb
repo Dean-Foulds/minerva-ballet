@@ -2,5 +2,16 @@
 class PhotoUploader < CarrierWave::Uploader::Base
   include Cloudinary::CarrierWave
 
-  # Remove everything else
+  process eager: true  # Force version generation at upload time.
+
+  process convert: 'jpg'
+
+  version :thumnail do
+    resize_to_fit 256, 256
+  end
+
+  version :bright_face do
+    cloudinary_transformation effect: "brightness:15", radius: 15,
+      width: 170, height: 170, crop: :fill, gravity: :face
+  end
 end
