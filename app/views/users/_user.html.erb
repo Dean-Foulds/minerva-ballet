@@ -5,9 +5,9 @@
       <%= cl_image_tag user.photo, class: "avatar" %>
       <% else %>
       <% end %>
-      <p><%= link_to 'Show user information', user %></p>
       <p><strong>Dancer's Name: </strong><%= user.first_name %>
       <%= user.last_name %></p>
+      <p><%= link_to 'Show user information', user %></p>
       <%#= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
       <%#= f.submit 'Change Role', :class => 'button-xs' %>
   <% end %>
