@@ -8,14 +8,14 @@
       <p><%= link_to 'Show user information', user %></p>
       <p><strong>Dancer's Name: </strong><%= user.first_name %>
       <%= user.last_name %></p>
-      <%= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
-      <%= f.submit 'Change Role', :class => 'button-xs' %>
+      <%#= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+      <%#= f.submit 'Change Role', :class => 'button-xs' %>
   <% end %>
 </td>
 <td>
   <% if user_signed_in? %>
     <% if current_user.try(:admin?) %>
-      <%= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
+      <%#= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
   <% end %>
 <% end %>
 </td>
