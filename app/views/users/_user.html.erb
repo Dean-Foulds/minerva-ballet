@@ -1,21 +1,18 @@
-
-<td>
-  <%= form_for(user) do |f| %>
-    <% if user.photo? %>
-      <%= cl_image_tag user.photo, class: "avatar" %>
-      <% else %>
-      <% end %>
-      <p><strong>Dancer's Name: </strong><%= user.first_name %>
-      <%= user.last_name %></p>
-      <p><%= link_to 'Show user information', user %></p>
-      <%#= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
-      <%#= f.submit 'Change Role', :class => 'button-xs' %>
-  <% end %>
-</td>
-<td>
   <% if user_signed_in? %>
     <% if current_user.try(:admin?) %>
-      <%#= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
+      <td>
+        <%= form_for(user) do |f| %>
+          <% if user.photo? %>
+            <%= link_to cl_image_tag(user.photo, class: "avatar"), user %>
+            <% else %>
+            <% end %>
+            <p><strong><%= link_to user.first_name, user %> <%= link_to user.last_name, user%> </strong></p>
+            <%#= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
+            <%#= f.submit 'Change Role', :class => 'button-xs' %>
+        <% end %>
+      </td>
   <% end %>
-<% end %>
+<% end %>      
+<td>
+      <%#= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
 </td>
