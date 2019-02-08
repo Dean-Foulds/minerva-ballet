@@ -105,6 +105,16 @@ section {
   font-family: 'Poiret One', cursive;
 }
 
+.mobile-hide{ 
+  text-rendering: none;
+}
+
+@media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobile-hide { display: none;}
+}
+
 .card-description {
   position: center;
   height: 100%;

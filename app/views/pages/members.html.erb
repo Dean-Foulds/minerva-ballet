@@ -24,8 +24,10 @@ Here, you will find rehearsal schedules and cast sheets, as well as documents po
   <%= date.to_formatted_s(:short) %>
   <% events.each do |event| %>
     <div class='cal-card'> 
-      <%= event.name %><br>
-      <%= event.start_time.strftime('%H:%M')%> - <%= event.end_time.strftime('%H:%M')  %>
+      <div class="mobile-hide">
+        <%= event.name  %><br>
+        <%= event.start_time.strftime('%H:%M')%> - <%= event.end_time.strftime('%H:%M')  %>
+      </div>
       <% if current_user %>
           <%= link_to "", event_path(event), class: "card-link"%>
       <% end %>
