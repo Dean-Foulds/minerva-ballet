@@ -152,8 +152,8 @@ section {
 .banner {
   color: whitesmoke;
   text-align: center;
-  // height: 100vh;
-  height: calc(100vh - 70px);
+  height: 100vh;
+  // height: calc(100vh - 70px);
   background-size: cover !important;
   display: flex;
   align-items: center;
