@@ -3,7 +3,7 @@
       <td>
         <%= form_for(user) do |f| %>
           <% if user.photo? %>
-            <%= link_to cl_image_tag(user.photo.url, :transformation=>'a_ignore', class: "avatar"), user %>
+            <%= link_to cl_image_tag(user.photo.url, :transformation=>a_ignore, class: "avatar"), user %>
             <% else %>
             <% end %>
             <p><strong><%= link_to "#{user.first_name} #{user.last_name}", user %></strong></p>
