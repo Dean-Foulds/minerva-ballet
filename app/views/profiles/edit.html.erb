@@ -5,7 +5,7 @@
       <%= simple_form_for(current_user, url: update_profile_path) do |f| %>
       <%= f.error_notification %>
       <%= f.input :photo %>
-      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.input :photo_cache, as: :hidden :a_ignore %>
       <%= f.input :first_name, placeholder: "First Name" %>
       <%= f.input :last_name, placeholder: "Last Name" %>
       <%= f.input :email, placeholder: "email" %>
