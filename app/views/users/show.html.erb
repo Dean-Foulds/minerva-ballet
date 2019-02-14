@@ -1,6 +1,6 @@
  <%= render 'layouts/navigation' %>
  <% if @user.photo? %>
-      <%= cl_image_tag @user.photo, class: "avatar-large" %>
+      <%= cl_image_tag @user.photo.url(:bright_face), class: "avatar-large" %>
       <% else %>
       <h1>Profile Page</h1>
     <% end %>
