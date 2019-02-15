@@ -1,4 +1,5 @@
  <%= render 'layouts/navigation' %>
+ <%= content_for :meta_title, "#{@user.first_name} | #{DEFAULT_META["meta_title"]}" %>
  <% if @user.photo? %>
       <%= cl_image_tag @user.photo.url(:bright_face), class: "avatar-large" %>
       <% else %>

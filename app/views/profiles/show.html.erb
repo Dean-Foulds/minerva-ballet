@@ -1,4 +1,5 @@
 <%= render 'layouts/navigation' %>
+<%= content_for :meta_title, "#{current_user.first_name} | #{DEFAULT_META["meta_title"]}" %>
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-sm-offset-4">
