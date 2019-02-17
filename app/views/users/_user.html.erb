@@ -7,12 +7,9 @@
             <% else %>
             <% end %>
             <p><strong><%= link_to "#{user.first_name} #{user.last_name}", user %></strong></p>
-            <%#= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
-            <%#= f.submit 'Change Role', :class => 'button-xs' %>
         <% end %>
       </td>
   <% end %>
 <% end %>      
 <td>
-      <%#= link_to("Delete user", user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') unless user == current_user %>
 </td>
