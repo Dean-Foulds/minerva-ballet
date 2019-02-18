@@ -1,8 +1,8 @@
 class EventsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :index]
   before_action :set_event, only: [:show]
-  # GET /events
-  # GET /events.json
+  add_breadcrumb "Event", :events_path
+
   def index
     @events = Event.all
   end
@@ -68,6 +68,7 @@ class EventsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_event
       @event = Event.friendly.find(params[:id])
+      add_breadcrumb @event, event_path(@event)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

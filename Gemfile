@@ -18,6 +18,7 @@ gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'jquery-fileupload-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.2.4'
+gem "breadcrumbs_on_rails"
 gem 'carrierwave', '~> 1.2'
 gem 'cloudinary', '~> 1.0.24'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
