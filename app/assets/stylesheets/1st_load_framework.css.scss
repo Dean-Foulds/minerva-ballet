@@ -112,7 +112,7 @@ section {
 @media only screen 
     and (min-device-width : 320px) 
     and (max-device-width : 480px){ 
-     .mobile-hide { display: none; width: 250px;}
+     .mobile-hide { display: none; width: auto;}
 }
 
 .card-description {
