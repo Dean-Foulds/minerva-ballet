@@ -11,7 +11,7 @@ module Admin
     
 
     def authenticate_admin
-      redirect_to root_path
+      redirect_to about_path
     end
 
     # Override this value to specify the number of elements to display at a time

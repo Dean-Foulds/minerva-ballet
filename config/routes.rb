@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     resources :users
     root to: "users#index"
   end
-  root to: 'visitors#index'
+  root to: 'pages#about'
   devise_for :users
   resources :users
 end
