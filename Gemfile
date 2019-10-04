@@ -7,6 +7,7 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.1'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'figaro'
+gem "nokogiri", ">= 1.10.4"
 gem 'bootstrap', '~> 4.3.1'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -45,12 +46,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'administrate'
 gem 'bourbon'
-gem 'devise'
+gem "devise", ">= 4.7.1"
 gem 'foundation-rails', '~> 5.5'
 gem 'high_voltage'
 gem 'pg', '~> 0.18'
 gem 'pundit'
-gem 'simple_form'
+gem "simple_form", ">= 5.0.0"
 gem 'unicorn'
 gem 'unicorn-rails'
 group :development do
