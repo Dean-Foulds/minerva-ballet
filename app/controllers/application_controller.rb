@@ -5,10 +5,9 @@ class ApplicationController < ActionController::Base
   # before_action :set_time_zone, if: :user_signed_in?
   include Pundit
 
-  #Pundit white list
-  #after_action :verify_authorized, except: :index
-  #after_action :verify_authorized, except: :index, unless: :skip_pundit?
-  #after_action :verify_policy_scoped, only: :index, unless: :skip_pundit?
+  def after_sign_in_path_for(resource)
+    about_path
+  end
 
   protected
 
