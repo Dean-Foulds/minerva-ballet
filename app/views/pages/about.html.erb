@@ -1,13 +1,17 @@
 <%= render 'layouts/navigation' %>
 <%= content_for :meta_title, "About | #{DEFAULT_META["meta_title"]}" %>
 <% content_for :title do %>About<% end %>
-<div class="about-page">
 
-<%= video_tag("https://res.cloudinary.com/minerva-ballet/video/upload/v1550775986/MINERVA_BALLET_PROMO..mp4", 
-   :height => 300, :width => 250, :controls => true,
-  :fallback_content => "Your browser does not support HTML5 video tags" ) %>
-<p>
-Minerva Ballet is a new London based amateur adult ballet company with a fresh, professional approach. At Minerva Ballet we aim to bring our dancers from the studio to the stage.  As adult dance students, you will have been taught ballet technique, you may even have become accustomed to a particular method or teacher.  What none of this prepares you for is performance.</p>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <%= video_tag("https://res.cloudinary.com/minerva-ballet/video/upload/v1550775986/MINERVA_BALLET_PROMO..mp4", 
+      :height => 200, :width => 350, :controls => true, :fallback_content => "Your browser does not support HTML5 video tags" ) %>
+      
+      <div class="about-page">
+<p>Minerva Ballet is a new London based amateur adult ballet company with a fresh, professional approach. At Minerva Ballet we aim to bring our dancers from the studio to the stage.  As adult dance students, you will have been taught ballet technique, you may even have become accustomed to a particular method or teacher.  What none of this prepares you for is performance.</p>
 
 <p>All of our teachers have worked internationally as ballet dancers, and are keen to teach amateurs the art of performance.  From the basics of stagecraft, to how to communicate with an audience, and how to deal with mishaps on stage, our teachers’ combined experience will help our dancers step away from the barre and become performers.</p>
 <p>If you would like to be involved, please
@@ -79,5 +83,11 @@ For our dancers, this will provide a further challenge, and have enlisted the he
   <strong>Knots</strong>
 <% end %>.  This is a collaborative work created by our ballet mistress Sheila and others.  This explores the trials of human relationships.  With a diverse score including Bach, Madness and The Buzzcocks, this is a humorous piece.  Drawing from classical ballet, jazz and contemporary dancing, the choreography is as eclectic as the music.  The juxtaposition of pain and jocularity mirrors the complexity of human nature and interactions.</p>
 </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <%= render 'layouts/footer' %>

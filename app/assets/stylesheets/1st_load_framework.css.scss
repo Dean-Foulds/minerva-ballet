@@ -149,6 +149,10 @@ section {
 }
 
 
+.container-fluid {
+  padding-top: 50px;
+}
+
 .banner {
   color: whitesmoke;
   text-align: center;
@@ -317,7 +321,7 @@ font-weight: bolder;
 }
 
 .about-page p {
-    padding-top: 35px;
+    padding-top: 15px;
     padding-bottom: 20px;
     justify-content: center;
     font-size: 18px;
