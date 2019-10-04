@@ -1,24 +1,46 @@
 <%= render 'layouts/navigation' %>
-<%= content_for :meta_title, "#{current_user.first_name} | #{DEFAULT_META["meta_title"]}" %>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 col-sm-offset-4">
-      <% if current_user.photo? %>
-      <%= cl_image_tag current_user.photo.url(:bright_face) %>
-      <% else %>
-      <h1>Profile Page</h1>
-    <% end %>
-      <p><strong>First Name:</strong> <%= current_user.first_name %></p>
-      <p><strong>Last name:</strong> <%= current_user.last_name %></p>
-      <p><strong>Email address:</strong> <%= current_user.email %></p>
-      <p><strong>Date of birth:</strong> <%= current_user.date_of_birth %></p>
-      <p><strong>Telephone:</strong> <%= current_user.telephone %></p>
-      <p><strong>Next of Kin:</strong> <%= current_user.next_of_kin %></p>
-      <p><strong>Any previous injuries?</strong> <%= current_user.previous_injuries %></p>
-      <p><strong>About me:</strong> <%= current_user.about_me %></p>
-      <%= link_to "Edit profile", edit_profile_path, class: "btn-treehouse" %>
-    </div>
-  </div>
-</div>
+<%= content_for :meta_title, "#{current_user.first_name} | #{DEFAULT_META["meta_title"]}" %> 
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1><%= current_user.first_name %></h1>
+          <p>
+            <a class="btn btn-sm btn-outline-secondary"><%= link_to 'Back to Home page', about_path %></a>          </p>
+        </div>
+      </section>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <% if current_user.photo? %>
+                <%= cl_image_tag current_user.photo.url(:bright_face) %>
+                <% else %>
+                <h1>Profile Page</h1>
+                <% end %>               
+                <div class="card-body">
+                <p><strong>First Name:</strong> <%= current_user.first_name %></p>
+                <p><strong>Last name:</strong> <%= current_user.last_name %></p>
+                <p><strong>Email address:</strong> <%= current_user.email %></p>
+                <p><strong>Date of birth:</strong> <%= current_user.date_of_birth %></p>
+                <p><strong>Telephone:</strong> <%= current_user.telephone %></p>
+                <p><strong>Next of Kin:</strong> <%= current_user.next_of_kin %></p>
+                <p><strong>Any previous injuries?</strong> <%= current_user.previous_injuries %></p>
+                <p><strong>About me:</strong> <%= current_user.about_me %></p>
+                <%= link_to "Edit profile", edit_profile_path, class: "btn-treehouse" %>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
 
-</strong>
+
+
+
+
+
+
+
+
