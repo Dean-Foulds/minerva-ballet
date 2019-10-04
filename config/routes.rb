@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match "/500", to: "errors#internal_server_error", via: :all
   resources :events
   get 'pages/about', to: 'pages#about', as: :about
+  get 'pages/gallery', to: 'pages#gallery', as: :gallery
   get 'pages/members', to: 'pages#members', as: :members
   get 'pages/guidelines', to: 'pages#guidelines', as: :guidelines
   get 'pages/cookie_eu', to: 'pages#cookie_eu', as: :cookie_eu
