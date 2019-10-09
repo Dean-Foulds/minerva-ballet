@@ -1,16 +1,50 @@
- <%= render 'layouts/navigation' %>
- <%= content_for :meta_title, "#{@user.first_name} | #{DEFAULT_META["meta_title"]}" %>
- <% if @user.photo? %>
-      <%= cl_image_tag @user.photo.url(:bright_face), class: "avatar-large" %>
-      <% else %>
-      <h1>Profile Page</h1>
-    <% end %>
-<p><strong>Name:</strong> <%= @user.first_name if @user.first_name %> <%= @user.last_name if @user.last_name %></p>
-<p><strong>Email:</strong> <%= @user.email if @user.email %></p>
-<p><strong>Date of Birth:</strong> <%= @user.date_of_birth if @user.date_of_birth %></p>
-<p><strong>Next of kin:</strong> <%= @user.next_of_kin if @user.next_of_kin%></p>
-<p><strong>Telephone:</strong> <%= @user.telephone if @user.telephone %></p>
-<p><strong>Previous injuries:</strong> <%= @user.previous_injuries if @user.previous_injuries %></p>
-<p><strong>About me:</strong> <%= @user.about_me if @user.about_me %></p>
 
-<strong></strong>
+
+
+
+<%= render 'layouts/navigation' %>
+<%= content_for :meta_title, "#{current_user.first_name} | #{DEFAULT_META["meta_title"]}" %> 
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1><%= @user.first_name %></h1>
+          <p>
+            <a class="btn btn-sm btn-outline-secondary"><%= link_to 'Back to Home page', about_path %></a>          </p>
+        </div>
+      </section>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <% if @user.photo? %>
+                <%= cl_image_tag @user.photo.url(:bright_face) %>
+                <% else %>
+                <h1>Profile Page</h1>
+                <% end %>               
+                <div class="card-body">
+                <p><strong>First Name:</strong> <%= @user.first_name %></p>
+                <p><strong>Last name:</strong> <%= @user.last_name %></p>
+                <p><strong>Email address:</strong> <%= @user.email %></p>
+                <p><strong>Date of birth:</strong> <%= @user.date_of_birth %></p>
+                <p><strong>Telephone:</strong> <%= @user.telephone %></p>
+                <p><strong>Next of Kin:</strong> <%= @user.next_of_kin %></p>
+                <p><strong>Any previous injuries?</strong> <%= @user.previous_injuries %></p>
+                <p><strong>About: <%= @user.first_name if @user.first_name %> <%= @user.last_name if @user.last_name %></strong><%= @user.about_me %></p>
+                <%= link_to "Edit profile", edit_profile_path, class: "btn-treehouse" %>
+                </div>
+              </div></strong>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
