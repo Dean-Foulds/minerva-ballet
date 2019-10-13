@@ -1,18 +1,21 @@
-<%= render 'layouts/navigation' %>
+<%= render 'layouts/navigation' %> 
 <%= content_for :meta_title, "Users | #{DEFAULT_META["meta_title"]}" %>
-<div class="container">
-  <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      <table class="table">
-        <tbody>
-          <% @users.each do |user| %>
-            <tr>
-              <%= render user %>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+
+        <div class="container">
+          <h1 class="jumbotron-heading">Minerva members</h1>
+          <p>
+            <a class="btn btn-sm btn-outline-secondary"><%= link_to 'Back to Home page', about_path %></a>          </p>
+        </div>
+
+
+<% @users.each do |user| %>  
+<div class="card-group">
+  <div class="card" style="height: 15rem; width: 19rem;">
+   <%= render user %>   
   </div>
 </div>
+
+
+<% end %> 
+
+

@@ -1,15 +1,22 @@
-  <% if user_signed_in? %>
-    <% if current_user.try(:admin?) %>
-      <td>
-        <%= form_for(user) do |f| %>
-          <% if user.photo? %>
-            <%= link_to cl_image_tag(user.photo.url(:angle=>"exif"), class: "avatar"), user %>
-            <% else %>
-            <% end %>
-            <p><strong><%= link_to "#{user.first_name} #{user.last_name}", user %></strong></p>
-        <% end %>
-      </td>
-  <% end %>
-<% end %>      
-<td>
-</td>
+<% if user_signed_in? %>
+  <% if current_user.try(:admin?) %>
+
+   <% end %>                 
+<% end %> 
+
+<%= form_for(user) do |f| %>
+<% if user.photo? %>
+          <%= link_to cl_image_tag(user.photo.url(:angle=>"exif"), class: "card-img-top avatar-card"), user %>
+          <% else %>
+          <%= link_to image_tag('min.png', class: "card-img-top avatar-card"), user %>
+          <% end %>  
+          <%= link_to user.first_name, user %> <%= link_to user.last_name, user %>        
+<% end %> 
+
+
+             
+
+
+
+
+ 
