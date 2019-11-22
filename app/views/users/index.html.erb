@@ -1,12 +1,12 @@
 <%= content_for :meta_title, "Users | #{DEFAULT_META["meta_title"]}" %>
-
-
-<h1 class="jumbotron text-center">Minerva members</h1>
-
-<a class="btn btn-sm btn-outline-secondary"><%= link_to 'Back to Home page', about_path %></a>      
-
-<div class="card">
-   <%= render 'user' %>   
+<div class="container jumbotron text-center"" style="padding: 50px">
+  <div class="row">
+    <div class="col-md-6 col-sm-offset-4">
+      <h1>Minerva members</h1>
+      <a><%= link_to 'Back to Home page', about_path,  class: "text-center" %></a>      
+      <%= render 'user' %>   
+      </div>
+   </div>
 </div>
 
 
