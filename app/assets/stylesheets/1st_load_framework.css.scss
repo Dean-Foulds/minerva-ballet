@@ -122,8 +122,8 @@ section {
   bottom: 30px;
   left: 10px;
   text-align: center;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   font-size: 85px;
   color: whitesmoke;
   background-color: #580000;
@@ -210,6 +210,7 @@ section {
 }
 
 .card-description {
+  color: whitesmoke;
   margin-top: 30px;
   bottom: 30px;
   left: 10px;
@@ -259,8 +260,9 @@ font-weight: bolder;
 }
 
 .avatar-card {
+  padding: 20px;
   width: 170px;
-  height: 180px;
+  height: 170px;
   border-radius: 20%;
 }
 

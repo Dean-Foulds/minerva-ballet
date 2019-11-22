@@ -2,20 +2,19 @@
 <%= content_for :meta_title, "Users | #{DEFAULT_META["meta_title"]}" %>
 
         <div class="container">
-          <h1 class="jumbotron-heading">Minerva members</h1>
+          <h1 class="jumbotron text-center">Minerva members</h1>
           <p>
             <a class="btn btn-sm btn-outline-secondary"><%= link_to 'Back to Home page', about_path %></a>          </p>
         </div>
 
 
-<% @users.each do |user| %>  
+  
 <div class="card-group">
   <div class="card" style="height: 15rem; width: 20rem;">
-   <%= render user %>   
+   <%= render 'user' %>   
   </div>
 </div>
 
 
-<% end %> 
 
 
