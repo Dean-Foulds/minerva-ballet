@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card" style="height: 150px;">
+        <h3><%= event.name %></h3>
+            <% if user_signed_in? %>
+                <% if current_user.try(:admin?) %>
+                <% end %>                 
+            <% end %> 
+        <h5><%= event.start_time.strftime( '%a %b %e %H:%M ') %></h5>
+            <%= link_to 'Show', event %>
+            <%= link_to 'Edit', edit_event_path(event) %>
+            <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }%>     
+       </div>
+    </div>
+  </div>
+</div>

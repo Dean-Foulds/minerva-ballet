@@ -1,0 +1,17 @@
+<div class="container" style="padding: 50px;">
+  <div class="row">
+    <div class="col-md-12 col-sm-offset-4">
+      <%= simple_form_for @event do |f| %>
+        <%= f.input :name %>
+        <%= f.input :teachers %>
+        <%= f.input :performers %>
+        <%= f.input :type_of_event %>
+        <%= f.input :description %>
+        <%= f.input :location %>
+        <%= f.datetime_select :start_time %>
+        <%= f.datetime_select :end_time %>
+        <%= f.button :submit, :class => 'btn-treehouse' %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -6,9 +6,6 @@ class User < ApplicationRecord
   extend FriendlyId
   friendly_id :first_name, use: :slugged
 
-
-
-
   def set_default_role
     self.role ||= :user
   end
