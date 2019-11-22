@@ -41,7 +41,6 @@ class EventsController < ApplicationController
   # PATCH/PUT /events/1
   # PATCH/PUT /events/1.json
   def update
-    render :form
     @event = Event.friendly.find(params[:id])
     respond_to do |format|
       if @event.update(event_params)
