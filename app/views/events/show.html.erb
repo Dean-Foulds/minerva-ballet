@@ -1,6 +1,6 @@
 <%= render 'layouts/navigation' %> 
 <div style="padding-top:50px;"> 
-    <%= link_to 'Back to all events', events_path, :class => 'btn-treehouse' %>
+<%= link_to 'Back to calendar', members_path, :class => 'btn-treehouse' %>    
 </div>    
 <div class="container">
   <div class="row">
@@ -22,7 +22,6 @@
 </div>
 
 <div style="padding-top: 50px">
-<%= link_to 'Back to calendar', members_path, :class => 'btn-treehouse' %>
 <% if current_user.admin? %>
   <%= link_to 'Edit', edit_event_path(@event), :class => 'btn-treehouse' %>
   <%= link_to 'List all events', events_path, :class => 'btn-treehouse' %>
