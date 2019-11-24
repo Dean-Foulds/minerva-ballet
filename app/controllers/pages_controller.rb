@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-    skip_before_action :authenticate_user!, only: [:edit, :index, :about, :cookie_eu]
+    skip_before_action :authenticate_user!, only: [:edit, :index, :gallery, :about, :cookie_eu]
     before_action :set_event, only: [:edit]
     
     def index
@@ -9,6 +9,8 @@ class PagesController < ApplicationController
       @events = Event.all
     end
 
+    def gallery
+    end
 
     def about
     end
