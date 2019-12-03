@@ -217,7 +217,7 @@ GEM
     momentjs-rails (2.20.1)
       railties (>= 3.1)
     multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.10.4)
@@ -389,6 +389,7 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faker
+  faraday (= 0.15.4)
   figaro
   foundation-rails (~> 5.5)
   friendly_id (~> 5.2.4)
