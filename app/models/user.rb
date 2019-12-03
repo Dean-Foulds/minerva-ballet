@@ -2,7 +2,7 @@ class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
   mount_uploader :photo, PhotoUploader
-  after_create :subscribe_to_newsletter
+  # after_create :subscribe_to_newsletter
   extend FriendlyId
   friendly_id :first_name, use: :slugged
 
