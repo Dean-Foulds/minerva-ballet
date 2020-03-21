@@ -1,11 +1,15 @@
 class ProfilesController < ApplicationController
 
     def show
-      
+      respond_to do |format|
+      format.html { render "show" }
+      end  
     end
   
     def edit
-     
+      respond_to do |format|
+      format.html { render "edit" }
+      end  
     end
   
     def update

@@ -2,7 +2,12 @@ class PagesController < ApplicationController
     skip_before_action :authenticate_user!, only: [:edit, :index, :gallery, :about, :cookie_eu]
     before_action :set_event, only: [:edit]
     
+
+
     def index
+      respond_to do |format|
+      format.html { render "index" }
+      end   
     end
 
     def members
@@ -10,16 +15,27 @@ class PagesController < ApplicationController
     end
 
     def gallery
+      respond_to do |format|
+      format.html { render "gallery" }
+      end 
     end
 
     def about
+      respond_to do |format|
+      format.html { render "about" }
+      end 
     end
 
     def edit
-
+      respond_to do |format|
+      format.html { render "edit" }
+      end 
     end
 
     def cookie_eu
+      respond_to do |format|
+      format.html { render "cookie_eu" }
+      end 
     end
 
     def admin
