@@ -1,5 +1,6 @@
 class UserPolicy
   attr_reader :current_user, :model
+  before_action :authenticate_user!
 
   def initialize(current_user, model)
     @current_user = current_user
