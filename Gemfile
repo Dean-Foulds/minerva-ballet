@@ -7,7 +7,7 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.1'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'figaro'
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'nokogiri', '~> 1.11'
 gem 'bootstrap', '~> 4.3.1'
 gem 'puma', '~> 3.12'
 gem 'sass-rails', '~> 5.0'
